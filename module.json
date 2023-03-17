@@ -1,0 +1,27 @@
+{
+  "id": "pf2e-prof-levels",
+  "title": "Pathfinder 2e Proficiency Without Levels",
+  "description": "",
+  "authors": [
+    {
+      "name": "Cararasu",
+      "discord": "Cararasu#5557"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "esmodules": ["main.js"],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "manifest": "https://raw.githubusercontent.com/Cararasu/pf2e-prof-levels/master/module.json",
+  "download": "https://github.com/Cararasu/pf2e-prof-levels/archive/refs/heads/master.zip",
+  "url": "https://github.com/Cararasu/pf2e-prof-levels"
+}

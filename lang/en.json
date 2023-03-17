@@ -1,0 +1,10 @@
+{
+	"pf2e-prof-levels": {
+		"settings": {
+			"scaling": {
+				"name": "Proficiency Level Divisor",
+				"hint": "Divides the proficiency bonus by the amount. Examples: 1.0 means the proficiency bonus equals the level, 2.0 means the prof. bonus equals half of the level, 0.0 means no bonus per level"
+			}
+        }
+    }
+}
