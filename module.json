@@ -1,6 +1,6 @@
 {
   "id": "pf2e-prof-levels",
-  "title": "Pathfinder 2e Proficiency Without Levels",
+  "title": "Pathfinder 2e Proficiency Level Scaler",
   "description": "",
   "authors": [
     {
@@ -16,7 +16,7 @@
     }
   ],
   "esmodules": ["main.js"],
-  "version": "1.0.0",
+  "version": "0.0.1",
   "compatibility": {
     "minimum": "10",
     "verified": "10"
