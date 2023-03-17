@@ -34,14 +34,14 @@ function get_level_scaling(level) {
 function apply_change(obj, path, lvl, changes) {
     if ("value" in obj) {
         const old_value = "pf2_value" in obj ? obj.pf2_value : obj.value;
-        const new_value = old_value - lvl + get_level_scaling(level);
+        const new_value = old_value - lvl + get_level_scaling(lvl);
         changes[path + ".value"] = new_value;
         changes[path + ".pf2_value"] = old_value;
     }
     if ("dc" in obj) {
         const old_dc = "pf2_dc" in obj ? obj.pf2_dc : obj.dc;
         const new_dc = old_dc - lvl;
-        changes[path + ".dc"] = new_dc + get_level_scaling(level);
+        changes[path + ".dc"] = new_dc + get_level_scaling(lvl);
         changes[path + ".pf2_dc"] = old_dc;
     }
 }
