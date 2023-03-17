@@ -143,7 +143,7 @@ Hooks.once("init", () => {
         return get_level_scaling(ctx.initialLevel);
 	});
 	game.pf2e.variantRules.ProficiencyWithoutLevel.applyDCCallbacks.push((ctx) => {
-        return ctx.initialDC - (ctx.level + get_level_scaling(ctx.level));
+        return ctx.initialDC - ctx.level + get_level_scaling(ctx.level);
 	});
 	game.pf2e.variantRules.ProficiencyWithoutLevel.applySimpleDCCallbacks.push((ctx) => {
         if (setting.scaling == 0.0)
@@ -153,7 +153,7 @@ Hooks.once("init", () => {
 	});
 	game.pf2e.variantRules.ProficiencyWithoutLevel.applyCheckCallbacks.push((ctx) => {
         var level = Number(ctx.item?.system.level?.value ?? ctx.actor?.system.details.level.value ?? 0);
-        return ctx.initialDC - (level + get_level_scaling(level));
+        return ctx.initialDC - level + get_level_scaling(level);
 	});
 });
 
